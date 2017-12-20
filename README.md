@@ -1,6 +1,9 @@
 [![npm][npm]][npm-url]
 [![deps][deps]][deps-url]
 
+This fork is an attempt to fix `required condition is false` error from `setupAndStartRecognizing`. <br/>
+For that reason `[self.audioEngine.inputNode removeTapOnBus:0];` is called before `installTapOnBus` in `setupAndStartRecognizing`
+
 <h1 align="center">React Native Voice</h1>
 
 <p align="center">A speech-to-text library for <a href="https://facebook.github.io/react-native/">React Native.</a></p>
